@@ -1,0 +1,39 @@
+{
+  "name": "ydau-electron",
+  "version": "1.0.0",
+  "description": "Yokogawa Data Acquisition Utility - Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "NODE_ENV=development electron .",
+    "dev": "concurrently \"cd ../ydau-frontend && ng serve\" \"wait-on http://localhost:4200 && electron .\"",
+    "build": "electron-builder",
+    "dist": "electron-builder --publish=never"
+  },
+  "build": {
+    "appId": "com.yokogawa.ydau",
+    "productName": "Yokogawa Data Acquisition Utility",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/ydau-icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "assets/ydau-icon.ico",
+      "uninstallerIcon": "assets/ydau-icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^latest",
+    "electron-builder": "^latest",
+    "concurrently": "^latest",
+    "wait-on": "^latest"
+  }
+}

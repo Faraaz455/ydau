@@ -1,0 +1,32 @@
+YOKOGAWA DATA ACQUISITION UTILITY (YDAU)
+SOFTWARE LICENSE AGREEMENT
+
+Copyright (c) 2024 Yokogawa Electric Corporation. All rights reserved.
+
+IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE USING THIS SOFTWARE.
+
+By installing, copying, or otherwise using this software, you agree to be bound by the terms of this License Agreement.
+
+1. LICENSE GRANT
+Yokogawa Electric Corporation grants you a non-exclusive, non-transferable license to use this software solely for your internal business purposes.
+
+2. RESTRICTIONS
+You may not:
+- Redistribute, sell, rent, lease, or sublicense this software
+- Reverse engineer, decompile, or disassemble this software
+- Remove or alter any proprietary notices or labels on this software
+
+3. OWNERSHIP
+This software is licensed, not sold. Yokogawa Electric Corporation retains all rights, title, and interest in and to the software.
+
+4. WARRANTY DISCLAIMER
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+
+5. LIMITATION OF LIABILITY
+IN NO EVENT SHALL YOKOGAWA ELECTRIC CORPORATION BE LIABLE FOR ANY DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THIS SOFTWARE.
+
+6. TERMINATION
+This license is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any term of this license.
+
+For questions about this license, please contact:
+support@yokogawa.com

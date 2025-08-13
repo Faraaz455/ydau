@@ -1,0 +1,74 @@
+{
+    "name": "ydau-application",
+    "version": "1.0.0",
+    "description": "Yokogawa Data Acquisition Utility - Complete Application",
+    "scripts": {
+        "build": "tsc",
+        "electron": "electron .",
+        "electron-dev": "tsc && electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder",
+        "dist-win": "electron-builder --win",
+        "postinstall": "electron-builder install-app-deps",
+        "clean": "rm -rf dist out"
+    },
+    "keywords": [
+        "yokogawa",
+        "ydau",
+        "data-acquisition",
+        "cems",
+        "emission-monitoring"
+    ],
+    "devDependencies": {
+        "@types/node": "^24.2.1",
+        "electron": "^37.2.6",
+        "electron-builder": "^26.0.12",
+        "nodemon": "^3.1.10",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.2"
+    },
+    "main": "dist/electron-main.js",
+    "author": "",
+    "license": "ISC",
+    "build": {
+        "appId": "com.yokogawa.ydau",
+        "productName": "YDAU",
+        "directories": {
+            "output": "out"
+        },
+        "files": [
+            "dist/**/*",
+            "public/**/*",
+            "assets/**/*",
+            "node_modules/**/*"
+        ],
+        "win": {
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": ["x64", "ia32"]
+                }
+            ],
+            "icon": "assets/icon.ico"
+        },
+        "nsis": {
+            "oneClick": false,
+            "allowToChangeInstallationDirectory": true,
+            "createDesktopShortcut": true,
+            "createStartMenuShortcut": true,
+            "shortcutName": "YDAU",
+            "uninstallDisplayName": "YDAU - Yokogawa Data Acquisition Utility",
+            "license": "LICENSE.txt",
+            "installerIcon": "assets/icon.ico",
+            "uninstallerIcon": "assets/icon.ico"
+        },
+        "mac": {
+            "category": "public.app-category.utilities",
+            "icon": "assets/icon.icns"
+        },
+        "linux": {
+            "target": "AppImage",
+            "icon": "assets"
+        }
+    }
+}
